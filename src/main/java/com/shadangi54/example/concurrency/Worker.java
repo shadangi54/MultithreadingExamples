@@ -1,4 +1,4 @@
-package com.shadangi54.example.basicthread;
+package com.shadangi54.example.concurrency;
 
 class Worker implements Runnable{
 	
