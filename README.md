@@ -12,23 +12,36 @@ The project includes examples of:
 - Thread pools and executors
 - Locks and atomic operations
 
+## Project Structure
+
+The project is organized into packages based on functionality:
+
+```
+src/main/java/com/shadangi54/example/
+├── basicthread/          # Basic thread operations and utilities
+├── synchronization/      # Thread synchronization mechanisms
+├── concurrency/          # High-level concurrency utilities
+└── locks/               # Locks and synchronizers
+```
+
 ## Examples Included
 
-- **Basic Thread Operations**
+### Basic Thread Operations (`com.shadangi54.example.basicthread`)
   - Thread creation (`MultiThreadingLearning.java`, `MultiThreadingLearning2.java`)
   - Main thread operations (`MainThreadLearning.java`)
   - Thread priorities (`ThreadPriority.java`)
   - Daemon threads (`DaemonThread.java`)
   - Thread joining (`JoinThread.java`)
   - Thread termination (`StopThreadLearning.java`)
+  - Worker utility class (`Worker.java`)
 
-- **Thread Synchronization**
+### Thread Synchronization (`com.shadangi54.example.synchronization`)
   - Monitor locks (`MonitorLock.java`)
   - Inter-thread communication (`InterThreadCommunication.java`)
   - Producer-consumer pattern (`ProducerConsumerProblemThread.java`)
   - Shared resources management (`SharedResource.java`)
 
-- **Concurrency Utilities**
+### Concurrency Utilities (`com.shadangi54.example.concurrency`)
   - Executor Services (`ExecutorServiceExample.java`)
   - Thread Pool Executors (`ThreadPoolExecutorExample.java`)
   - Scheduled Thread Pool Executor (`ScheduleThreadPoolExecutorExample.java`)
@@ -38,7 +51,7 @@ The project includes examples of:
   - Virtual Threads (`VirtualThreadExample.java`)
   - Thread-Local Storage (`ThreadLocalExample.java`)
 
-- **Locks and Synchronizers**
+### Locks and Synchronizers (`com.shadangi54.example.locks`)
   - ReentrantLock (`ReentrantLockExample.java`)
   - ReadWriteLock (`ReadWriteLockExample.java`)
   - StampedLock (`StampedLockExample.java`)
@@ -55,11 +68,16 @@ Each Java class contains a standalone example that can be run independently. The
 To run an example:
 
 ```bash
-# Compile
-javac -d ./target/classes src/main/java/com/shadangi54/example/<ClassName>.java
+# Compile (example for basicthread package)
+javac -d ./target/classes src/main/java/com/shadangi54/example/basicthread/<ClassName>.java
 
-# Run
-java -cp ./target/classes com.shadangi54.example.<ClassName>
+# Run (example for basicthread package)
+java -cp ./target/classes com.shadangi54.example.basicthread.<ClassName>
+
+# For other packages, replace 'basicthread' with:
+# - synchronization
+# - concurrency  
+# - locks
 ```
 
 ## Requirements
