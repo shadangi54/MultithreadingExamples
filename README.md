@@ -31,8 +31,12 @@ The project includes examples of:
 - **Concurrency Utilities**
   - Executor Services (`ExecutorServiceExample.java`)
   - Thread Pool Executors (`ThreadPoolExecutorExample.java`)
+  - Scheduled Thread Pool Executor (`ScheduleThreadPoolExecutorExample.java`)
+  - Fork-Join Pool and RecursiveTask (`ForkJoinPoolExample.java`)
   - Future and Callable (`FutureExample.java`, `CallableExample.java`)
   - CompletableFuture (`CompletableFutureExample.java`)
+  - Virtual Threads (`VirtualThreadExample.java`)
+  - Thread-Local Storage (`ThreadLocalExample.java`)
 
 - **Locks and Synchronizers**
   - ReentrantLock (`ReentrantLockExample.java`)
@@ -61,6 +65,7 @@ java -cp ./target/classes com.shadangi54.example.<ClassName>
 ## Requirements
 
 - Java 8 or higher
+- Java 19+ required for Virtual Threads example
 
 ## License
 
