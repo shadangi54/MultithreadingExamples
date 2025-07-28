@@ -1,9 +1,6 @@
 package com.shadangi54.example.locks;
 
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 /**
  * This class demonstrates using Semaphores to control access to a shared

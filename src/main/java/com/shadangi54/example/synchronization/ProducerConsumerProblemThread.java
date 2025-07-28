@@ -1,6 +1,5 @@
 package com.shadangi54.example.synchronization;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
